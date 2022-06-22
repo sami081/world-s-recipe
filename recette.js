@@ -40,15 +40,16 @@ const fetchMeals = async () => {
     return `
     <h2>${meal.strMeal}</h2>
     <div class="card">
+    <div class="card-ingredients">
   <img src =${meal.strMealThumb} alt ="photo de ${meal.strMeal}"/>
   <div class="ingredients">
-  <h2>Listes des ingrédients</h2>
+  <h2>Ingredient lists</h2>
   <ul>${ingredients.join("")}</ul>
- </div>
+ </div></div>
  <div class="recette">
- <h3>Recette</h3>
+ <h3>Recipe</h3>
  <p>${meal.strInstructions}</p>
- <a href=${meal.strYoutube}>Voir la recette en video</a>
+ <a href=${meal.strYoutube}>See the recipe in video</a>
  </div>
 
   </div>
