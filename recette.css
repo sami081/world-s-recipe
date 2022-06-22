@@ -30,3 +30,32 @@ img{
   align-items: center;
   margin-bottom: 20px;
 }
+header{
+  width: 98%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: brown;
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+padding: 10px;}
+header > h2 {
+  margin: 5px 0;
+}
+.div-logo{
+  text-decoration: none;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bolder;
+  background: brown; 
+}
+.logo{
+  margin: 5px;
+  width: 5em;
+  height: 5em;
+  border-radius: 100%;
+}

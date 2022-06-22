@@ -1,4 +1,24 @@
-.app {
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header{
+  width: 98%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: brown;
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+padding: 10px;}
+header > h2 {
+  margin: 5px 0;
+}
+.app { width: 100%;
   display: flex;
 flex-direction: column;
   align-items: center;
@@ -89,7 +109,26 @@ img {
 .title:hover{
   transform: scale(1.2);
 }
+.div-logo{
+  text-decoration: none;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bolder;
+  background: brown; 
+}
+.logo{
+  margin: 5px;
+  width: 5em;
+  height: 5em;
+  border-radius: 100%;
+}
 @media (max-width: 500px)  {
+  .div-logo{
+    width: 100% !important;
+  }
   #result{
     width: 100%;
     margin: 20px 0;
@@ -111,6 +150,6 @@ img {
   }
 }
 
-h2,h3,p{
+h1,h2,h3,p{
   margin: 0;
 }

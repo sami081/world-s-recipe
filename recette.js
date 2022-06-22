@@ -38,7 +38,7 @@ const fetchMeals = async () => {
     
 
     return `
-    <h1>${meal.strMeal}</h1>
+    <h2>${meal.strMeal}</h2>
     <div class="card">
   <img src =${meal.strMealThumb} alt ="photo de ${meal.strMeal}"/>
   <div class="ingredients">
