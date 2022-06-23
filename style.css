@@ -1,11 +1,11 @@
-body{
+body {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-header{
+header {
   width: 95%;
   display: flex;
   align-items: center;
@@ -21,11 +21,11 @@ header > h2 {
 }
 .app {
   display: flex;
-flex-direction: column;
+  flex-direction: column;
   align-items: center;
 }
 form {
-  width: 50%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   background: burlywood;
@@ -34,6 +34,7 @@ form {
   height: 200px;
   border-radius: 5px;
   font-size: 1.5em;
+  padding: 15px;
 }
 input {
   width: 70%;
@@ -56,22 +57,23 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 10px;
+  
   background: grey;
   border-radius: 10px;
+  
 }
 .card {
   border-radius: 5px;
   background-color: burlywood;
   margin: 20px 5px;
-
+padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300px;
+  height: 450px;
   justify-content: space-around;
 }
-.info{
+.info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,7 +96,7 @@ img {
 .apparition {
   display: none;
 }
-.apparition2{
+.apparition2 {
   display: flex;
   flex-direction: column;
 }
@@ -108,10 +110,10 @@ img {
   padding: 5px;
   transition: all ease-in-out 0.8s;
 }
-.title:hover{
+.title:hover {
   transform: scale(1.2);
 }
-.div-logo{
+.div-logo {
   text-decoration: none;
   display: flex;
   width: 50%;
@@ -119,23 +121,23 @@ img {
   align-items: center;
   color: white;
   font-weight: bolder;
-  background: brown; 
+  background: brown;
 }
-.logo{
+.logo {
   margin: 5px;
   width: 5em;
   height: 5em;
   border-radius: 100%;
 }
-@media (max-width: 500px)  {
-  .div-logo{
+@media (max-width: 500px) {
+  .div-logo {
     width: 100% !important;
     align-items: center;
   }
   .div-logo > h1 {
     width: 50%;
   }
-  #result{
+  #result {
     width: 95%;
     margin: 20px 0;
     padding: 0;
@@ -145,22 +147,55 @@ img {
     border-radius: 10px;
   }
   .card {
-    width: 90%  !important;
+    width: 90% !important;
     margin: 10px 0px;
   }
-  form{
+  form {
     width: 95%;
   }
-  .title{
+  .title {
     width: 95% !important;
   }
 }
 
-h1,h2,h3,p{
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
-@media (min-width: 500px) and (max-width : 1000px) {
-  .card{ 
+@media (min-width: 500px) and (max-width: 1000px) {
+  .card {
     width: 45%;
   }
+}
+
+footer {
+  background: brown;
+   width: 95%; 
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+footer > .logo {
+ width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10em;
+}
+.logo > img{
+width: 3em;
+height: 3em;
+}
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 25%;
+}
+.social-logo{
+  width: 3em;
+  height: 3em;
 }

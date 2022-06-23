@@ -17,8 +17,9 @@ function mealsDisplay() {
   if (meals === null) {
     result.innerHTML = "<h2>Aucun résultat</h2>";
   } else {
-    meals.length = 12;
-
+    // meals.length = 12;
+    result.style.width = "95%";
+    result.style.padding = "10px";
     result.innerHTML = meals
       .map((meal) => {
         return `
@@ -64,10 +65,10 @@ form.addEventListener("submit", (e) => {
   let nameOne = nameStorage.name;
   let nameT = nameOne.toLowerCase();
   console.log(nameT);
-  if(nameT !== "pork"){
-  mealsDisplay();
-  }else{
-    alert("non")
+  if (nameT !== "pork") {
+    mealsDisplay();
+  } else {
+    alert("non");
   }
 });
-name.toLowercase
+name.toLowercase;
