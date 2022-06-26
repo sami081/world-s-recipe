@@ -1,4 +1,6 @@
 header {
+  z-index: 1;
+  position: fixed;
   width: 100%;
   display: flex;
   align-items: center;
@@ -6,7 +8,7 @@ header {
   background: brown;
   color: white;
   border-radius: 10px;
-  /* margin-bottom: 30px; */
+  margin-bottom: 30px;
 }
 header .div-logo {
   text-decoration: none;
@@ -43,7 +45,7 @@ header h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 260px;
 }
 .app form {
   color: white;
@@ -58,13 +60,20 @@ header h2 {
   font-size: 1.5em;
 }
 .app form input {
-  width: 50%;
+  width: 35%;
   text-align: center;
   border-radius: 5px;
   border: none;
   background: brown;
   color: white;
   font-size: 1.5em;
+}
+.app form .submit {
+  cursor: pointer;
+  transition: all ease-in-out 0.8s;
+}
+.app form .submit:hover {
+  transform: scale(1.2);
 }
 .app #result {
   margin-top: 45px;
@@ -126,6 +135,10 @@ header h2 {
     background: grey;
     align-items: center;
     border-radius: 10px;
+  }
+  #result .card {
+    width: 100% !important;
+    padding: 0 !important;
   }
 }
 footer {
@@ -309,13 +322,13 @@ a {
   }
   .card2 .card-ingredients {
     height: 550px;
-    width: 45%;
+    width: 60%;
   }
   .card2 .card-ingredients img {
     height: 100%;
   }
   .card2 .recette {
-    width: 45% !important;
+    width: 25% !important;
   }
 }
 

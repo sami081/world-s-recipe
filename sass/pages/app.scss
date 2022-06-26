@@ -1,8 +1,8 @@
-.app{
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 260px;
   form {
     color: white;
     width: 100%;
@@ -16,68 +16,78 @@
     font-size: 1.5em;
     // padding: 15px;
     input {
-      width: 50%;
+      width: 35%;
       text-align: center;
       border-radius: 5px;
       border: none;
       background: brown;
       color: white;
       font-size: 1.5em;
+    }
+    .submit {
+      cursor: pointer;
+      transition: all ease-in-out 0.8s;
+      
+    }
+    .submit:hover{
+     
+   transform: scale(1.2);
+      
+    }
   }
-}
-#result {
-  margin-top: 45px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background: burlywood;
-  border-radius: 10px;
-  width: 100% !important;
-  padding: 0px !important;
-  
-  .card {
-    border-radius: 5px;
-    background-color: brown;
-    margin: 40px 0px;
-    padding: 10px;
+  #result {
+    margin-top: 45px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 400px;
-    width: 27%;
-    justify-content: space-around;
-    .info {
-      color: white;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: burlywood;
+    border-radius: 10px;
+    width: 100% !important;
+    padding: 0px !important;
+
+    .card {
+      border-radius: 5px;
+      background-color: brown;
+      margin: 40px 0px;
+      padding: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 30%;
-      justify-content: space-evenly;
-      padding: 10px;
-      width: 100%;
-      .title {
-        max-width: 100%;
-        margin: 10px;
-        text-align: center;
-        cursor: pointer;
-        background: rgba(201, 98, 8, 0.95);
+      height: 400px;
+      width: 27%;
+      justify-content: space-around;
+      .info {
         color: white;
-        width: max-content;
-        border-radius: 10px;
-        padding: 5px;
-        transition: all ease-in-out 0.8s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 30%;
+        justify-content: space-evenly;
+        padding: 10px;
+        width: 100%;
+        .title {
+          max-width: 100%;
+          margin: 10px;
+          text-align: center;
+          cursor: pointer;
+          background: rgba(201, 98, 8, 0.95);
+          color: white;
+          width: max-content;
+          border-radius: 10px;
+          padding: 5px;
+          transition: all ease-in-out 0.8s;
+        }
+      }
+      img {
+        height: 65%;
+        width: 98%;
+        border-radius: 5px 5px 0 0;
+        object-fit: cover;
+      }
     }
   }
-  img {
-    height: 65%;
-    width: 98%;
-    border-radius: 5px 5px 0 0;
-    object-fit: cover;
 }
-}
-}
-}
-@media (max-width: 500px){
+@media (max-width: 500px) {
   #result {
     width: 95%;
     margin: 20px 0;
@@ -86,5 +96,9 @@
     background: grey;
     align-items: center;
     border-radius: 10px;
-}
+    .card {
+      width: 100% !important;
+      padding: 0 !important;
+    }
+  }
 }
