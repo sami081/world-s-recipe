@@ -39,7 +39,7 @@ const fetchMeals = async () => {
 
     return `
     <h2 class="title2">${meal.strMeal.toUpperCase()}</h2>
-    <div class="card">
+    <div class="card2">
     <div class="card-ingredients">
   <img src =${meal.strMealThumb} alt ="photo de ${meal.strMeal}"/>
   <div class="ingredients">

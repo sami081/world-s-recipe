@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+  padding: 0;
+}
 .app {
   display: flex;
   flex-direction: column;
@@ -9,6 +13,7 @@
   justify-content: space-between;
   background: burlywood;
   border-radius: 10px;
+  width: 100%;
 }
 img {
   width: 50%;
@@ -17,6 +22,7 @@ img {
   object-fit: cover;
 }
 .card-ingredients {
+  width: 100%;
   padding: 15px;
   display: flex;
   justify-content: center;
@@ -27,6 +33,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 80%;
  
   overflow: hidden;
   background: brown;
@@ -91,17 +98,19 @@ footer {
   display: flex;
   justify-content: space-evenly;
   border-radius: 10px;
+  align-items: center;
 }
 footer > .logo {
  width: 25%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   border-radius: 10em;
 }
 .logo > img{
 width: 3em;
 height: 3em;
+border-radius: 100%;
 }
 .social{
   display: flex;
@@ -110,14 +119,24 @@ height: 3em;
   width: 25%;
 }
 .social-logo{
-  width: 3em;
-  height: 3em;
+  width: 2em;
+  height: 2em;
 }
 .title2{
   color: brown;
   font-weight: bolder;
 }
 @media (max-width: 500px){
+  header {
+    width: 100% !important;
+  }
+  header>h1{
+    font-size: 1em;
+  }
+  header > img { 
+    width: 2em !important;
+    height: 2em !important;
+  }
   .card-ingredients{
     flex-direction: column;
   }
@@ -128,4 +147,13 @@ height: 3em;
     width :80%!important;
     transform: translate(0,-20px) !important;
   }
+}
+a{
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+}
+*{
+  margin: 0;
+  padding: 0;
 }

@@ -1,119 +1,14 @@
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 header {
-  width: 95%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background: brown;
-  color: white;
-  border-radius: 10px;
-  margin: 10px;
-}
-header > h2 {
-  margin: 5px 0;
-  text-align: center;
-}
-.app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-form {
-  width: 95%;
-  display: flex;
-  flex-direction: column;
-  background: burlywood;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 200px;
-  border-radius: 5px;
-  font-size: 1.5em;
-  padding: 15px;
-}
-input {
-  width: 70%;
-  text-align: center;
-  border-radius: 5px;
-  border: none;
-  background: brown;
-  color: white;
-  font-size: 1.5em;
-}
-input::placeholder {
-  color: white;
-}
-li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-#result {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  
-  background: grey;
-  border-radius: 10px;
-  
-}
-.card {
-  border-radius: 5px;
-  background-color: burlywood;
-  margin: 20px 5px;
-padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 450px;
-  justify-content: space-around;
-}
-.info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 30%;
-  justify-content: space-evenly;
-  padding: 10px;
   width: 100%;
-}
-img {
-  height: 65%;
-  width: 98%;
-  border-radius: 5px 5px 0 0;
-  object-fit: cover;
-}
-
-.list-ingredients {
-  cursor: pointer;
-  text-decoration: underline;
-}
-.apparition {
-  display: none;
-}
-.apparition2 {
   display: flex;
+  align-items: center;
   flex-direction: column;
-}
-.title {
-  text-align: center;
-  cursor: pointer;
-  background: rgba(201, 98, 8, 0.95);
+  background: brown;
   color: white;
-  width: 9em;
   border-radius: 10px;
-  padding: 5px;
-  transition: all ease-in-out 0.8s;
+  /* margin-bottom: 30px; */
 }
-.title:hover {
-  transform: scale(1.2);
-}
-.div-logo {
+header .div-logo {
   text-decoration: none;
   display: flex;
   width: 50%;
@@ -123,20 +18,101 @@ img {
   font-weight: bolder;
   background: brown;
 }
-.logo {
+header .logo {
   margin: 5px;
   width: 5em;
   height: 5em;
   border-radius: 100%;
+  object-fit: cover;
 }
+header h2 {
+  margin: 5px 0;
+  text-align: center;
+}
+
 @media (max-width: 500px) {
   .div-logo {
     width: 100% !important;
     align-items: center;
   }
-  .div-logo > h1 {
+  .div-logo h1 {
     width: 50%;
   }
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+.app form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: burlywood;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 200px;
+  border-radius: 5px;
+  font-size: 1.5em;
+}
+.app form input {
+  width: 70%;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  background: brown;
+  color: white;
+  font-size: 1.5em;
+}
+.app #result {
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: grey;
+  border-radius: 10px;
+  width: 100% !important;
+  padding: 0px !important;
+}
+.app #result .card {
+  border-radius: 5px;
+  background-color: burlywood;
+  margin: 20px 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  justify-content: space-around;
+}
+.app #result .card .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30%;
+  justify-content: space-evenly;
+  padding: 10px;
+  width: 100%;
+}
+.app #result .card .info .title {
+  text-align: center;
+  cursor: pointer;
+  background: rgba(201, 98, 8, 0.95);
+  color: white;
+  width: 9em;
+  border-radius: 10px;
+  padding: 5px;
+  transition: all ease-in-out 0.8s;
+}
+.app #result .card img {
+  height: 65%;
+  width: 98%;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+}
+
+@media (max-width: 500px) {
   #result {
     width: 95%;
     margin: 20px 0;
@@ -146,56 +122,157 @@ img {
     align-items: center;
     border-radius: 10px;
   }
-  .card {
-    width: 90% !important;
-    margin: 10px 0px;
-  }
-  form {
-    width: 95%;
-  }
-  .title {
-    width: 95% !important;
-  }
 }
-
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-}
-@media (min-width: 500px) and (max-width: 1000px) {
-  .card {
-    width: 45%;
-  }
-}
-
 footer {
+  bottom: 0;
+  margin-top: 30px;
   background: brown;
-   width: 95%; 
+  width: 100%;
   color: white;
   display: flex;
   justify-content: space-evenly;
   border-radius: 10px;
+  align-items: center;
 }
-footer > .logo {
- width: 25%;
+footer .logo {
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-radius: 10em;
+  margin: 5px;
+  height: 5em;
 }
-.logo > img{
-width: 3em;
-height: 3em;
+footer .logo img {
+  width: 2em;
+  height: 2em;
+  border-radius: 100%;
+  object-fit: cover;
 }
-.social{
+footer .eagle {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+footer .social {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 25%;
 }
-.social-logo{
-  width: 3em;
-  height: 3em;
+footer .social .social-logo {
+  width: 2em;
+  height: 2em;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
 }
+
+@media (max-width: 500px) {
+  footer {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  footer .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  footer .eagle {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  footer .social {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+}
+h2 {
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app .title2 {
+  color: brown;
+  font-weight: bolder;
+  margin-bottom: 25px;
+}
+.app .card2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: burlywood;
+  border-radius: 10px;
+}
+.app .card2 .card-ingredients {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app .card2 .card-ingredients img {
+  width: 50%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.app .card2 .card-ingredients .ingredients {
+  background: brown;
+  color: white;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background: brown;
+  color: white;
+  transform: translateX(-10%);
+  border-radius: 1em;
+}
+.app .card2 .card-ingredients .ingredients h2 {
+  margin: 10px;
+}
+.app .card2 .recette {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.app .card2 .recette a {
+  text-align: center;
+  width: 100%;
+}
+.app .card2 .recette p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 500px) {
+  .card-ingredients {
+    flex-direction: column;
+  }
+  .card-ingredients img {
+    width: 100% !important;
+  }
+  .card-ingredients .ingredients {
+    width: 80% !important;
+    transform: translate(0, -20px) !important;
+    padding: 10px;
+  }
+  .card-ingredients .ingredients h2 {
+    margin: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

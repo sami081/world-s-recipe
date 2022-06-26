@@ -1,0 +1,41 @@
+header {
+  
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: brown;
+  color: white;
+  border-radius: 10px;
+  /* margin-bottom: 30px; */
+  .div-logo {
+    text-decoration: none;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    background: brown;
+  }
+  .logo {
+    margin: 5px;
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+  h2 {
+    margin: 5px 0;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .div-logo {
+    width: 100% !important;
+    align-items: center;
+    h1 {
+      width: 50%;
+    }
+  }
+}
