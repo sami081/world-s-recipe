@@ -25,6 +25,9 @@
       object-fit: cover;
   }
   .ingredients {
+  
+   
+    height: 80%;
     background: brown;
     color: white;
     width: 50%;
@@ -73,4 +76,28 @@ h2{
       margin: 10px;
     }
 }}
+}
+@media (min-width:500px) and (max-width:1000px){
+  .card-ingredients{
+    margin-top: 30px;
+    img{
+      height: 470px;
+    }
+  }
+}
+@media (min-width:1001px){
+  .card2{
+    align-items: center;
+    justify-content: center !important;
+    .card-ingredients{
+      height: 550px;
+      width: 45%;
+      img{
+        height: 100%;
+      }
+    }
+    .recette{
+      width: 45% !important;
+    }
+  }
 }

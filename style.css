@@ -46,6 +46,7 @@ header h2 {
   margin-top: 80px;
 }
 .app form {
+  color: white;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -57,7 +58,7 @@ header h2 {
   font-size: 1.5em;
 }
 .app form input {
-  width: 70%;
+  width: 50%;
   text-align: center;
   border-radius: 5px;
   border: none;
@@ -70,23 +71,25 @@ header h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background: grey;
+  background: burlywood;
   border-radius: 10px;
   width: 100% !important;
   padding: 0px !important;
 }
 .app #result .card {
   border-radius: 5px;
-  background-color: burlywood;
-  margin: 20px 5px;
+  background-color: brown;
+  margin: 40px 0px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 250px;
+  height: 400px;
+  width: 27%;
   justify-content: space-around;
 }
 .app #result .card .info {
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,11 +99,13 @@ header h2 {
   width: 100%;
 }
 .app #result .card .info .title {
+  max-width: 100%;
+  margin: 10px;
   text-align: center;
   cursor: pointer;
   background: rgba(201, 98, 8, 0.95);
   color: white;
-  width: 9em;
+  width: max-content;
   border-radius: 10px;
   padding: 5px;
   transition: all ease-in-out 0.8s;
@@ -196,6 +201,20 @@ h2 {
   padding: 0;
 }
 
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #FCE7C0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -225,6 +244,7 @@ h2 {
   object-fit: cover;
 }
 .app .card2 .card-ingredients .ingredients {
+  height: 80%;
   background: brown;
   color: white;
   width: 50%;
@@ -272,6 +292,30 @@ h2 {
   }
   .card-ingredients .ingredients h2 {
     margin: 10px;
+  }
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+  .card-ingredients {
+    margin-top: 30px;
+  }
+  .card-ingredients img {
+    height: 470px;
+  }
+}
+@media (min-width: 1001px) {
+  .card2 {
+    align-items: center;
+    justify-content: center !important;
+  }
+  .card2 .card-ingredients {
+    height: 550px;
+    width: 45%;
+  }
+  .card2 .card-ingredients img {
+    height: 100%;
+  }
+  .card2 .recette {
+    width: 45% !important;
   }
 }
 
